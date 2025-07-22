@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         视频音频下载器
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      1.01
 // @description  在所有网站的视频和音频元素旁边添加下载按钮
 // @author       dream10201
 // @match        *://*/*
