@@ -17,9 +17,8 @@
 
 (async function() {
     'use strict';
-    const YT_DLP_WEB_URL=await GM.getValue("YT_DLP_WEB_URL",null);
-    const PROXY_URL=await GM.getValue("PROXY_URL",null);
-    
+    const YT_DLP_WEB_URL=await GM.getValue("YT_DLP_WEB_URL","");
+    const PROXY_URL=await GM.getValue("PROXY_URL","");
     let pageWindow;
     if (typeof unsafeWindow === 'undefined') {
         pageWindow = window;
@@ -27,8 +26,14 @@
         pageWindow = unsafeWindow;
     }
     const yt_dlp_web_ui_token = pageWindow.localStorage.getItem('token');
+    if("" == YT_DLP_WEB_URL || "" == PROXY_URL){
+        await GM.setValue("YT_DLP_WEB_URL","");
+        await GM.setValue("PROXY_URL","");
+        return;
+    }
     if(new URL(YT_DLP_WEB_URL).hostname == document.domain && null!=yt_dlp_web_ui_token && yt_dlp_web_ui_token.length>0){
         await GM.setValue('yt_dlp_web_ui_token', yt_dlp_web_ui_token);
+        return;
     }
     const TOKEN=await GM.getValue("yt_dlp_web_ui_token",null);
     if(null == TOKEN){
