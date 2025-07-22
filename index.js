@@ -5,10 +5,8 @@
 // @description  在所有网站的视频和音频元素旁边添加下载按钮
 // @author       dream10201
 // @match        *://*/*
-// @grant        GM.xmlHttpRequest
-// @grant        GM.cookie
-// @connect      yt.bidd.net
 // @connect      *
+// @grant        GM.xmlHttpRequest
 // @run-at       document-end
 // @grant        GM.setValue
 // @grant        GM.getValue
