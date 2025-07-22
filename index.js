@@ -10,8 +10,8 @@
 // @run-at       document-end
 // @grant        GM.setValue
 // @grant        GM.getValue
-// @downloadURL https://raw.githubusercontent.com/dream10201/yt-dlp-script/refs/heads/master/index.js
-// @updateURL https://raw.githubusercontent.com/dream10201/yt-dlp-script/refs/heads/master/index.js
+// @downloadURL https://cdn.jsdelivr.net/gh/dream10201/yt-dlp-script@master/index.js
+// @updateURL https://cdn.jsdelivr.net/gh/dream10201/yt-dlp-script@master/index.js
 // @inject-into  content
 // ==/UserScript==
 
