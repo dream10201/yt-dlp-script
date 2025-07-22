@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         视频音频下载器
 // @namespace    https://github.com/dream10201/yt-dlp-script
-// @version      1.1
+// @version      1.2
 // @description  在所有网站的视频和音频元素旁边添加下载按钮
 // @author       dream10201
 // @match        *://*/*
@@ -11,6 +11,7 @@
 // @grant        GM.setValue
 // @grant        GM.getValue
 // @downloadURL https://cdn.jsdelivr.net/gh/dream10201/yt-dlp-script@master/index.js
+// @updateURL https://cdn.jsdelivr.net/gh/dream10201/yt-dlp-script@master/index.js
 // @inject-into  content
 // ==/UserScript==
 
